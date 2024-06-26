@@ -26,7 +26,7 @@ GITHUB_REPO_GO = 'gorouflex/DuoXPy'
 GITHUB_REPO_OH = 'ohfeel/DuoXPy'
 GITHUB_OHFEEL = 'ohfeel'
 config = configparser.ConfigParser()
-logging.basicConfig(filename='DuoXPy/duoxpy.log', filemode='a', format='%(asctime)s - %(levelname)s - %(message)s', level=logging.ERROR)
+logging.basicConfig(filename='DuolingoXP/DuolingoXP.log', filemode='a', format='%(asctime)s - %(levelname)s - %(message)s', level=logging.ERROR)
 
 def clear():
     os.system('cls' if os.name == 'nt' else 'clear')
