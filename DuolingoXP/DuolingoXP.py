@@ -21,12 +21,13 @@ g = Fore.GREEN
 
 current_dir = os.path.dirname(os.path.realpath(__file__))
 CONFIG_FILE = os.path.join(current_dir, 'config.ini')
-VERSION = '3.0.0'
+LOG_FILE = os.path.join(current_dir, 'DuolingoXP.log')
+VERSION = '3.0.1'
 GITHUB_REPO_GO = 'gorouflex/DuoXPy'
 GITHUB_REPO_OH = 'ohfeel/DuolingoXP'
 GITHUB_OHFEEL = 'ohfeel'
 config = configparser.ConfigParser()
-logging.basicConfig(filename='DuolingoXP/DuolingoXP.log', filemode='a', format='%(asctime)s - %(levelname)s - %(message)s', level=logging.ERROR)
+logging.basicConfig(filename=LOG_FILE, filemode='a', format='%(asctime)s - %(levelname)s - %(message)s', level=logging.ERROR)
 
 
 def clear():
@@ -193,7 +194,7 @@ def run():
             xpGains = data['xpGains']
             skillId = xpGains[0]['skillId']
         except:
-            print(f"{colors.FAIL}Your Duolingo account has been banned/does not exist or you didn't do any lesson, please do at least 1 lesson{colors.ENDC}")
+            print(f"{r}Your Duolingo account has been banned/does not exist or you didn't do any lesson, please do at least 1 lesson{Fore.RESET}")
             logging.error("Your Duolingo account has been banned/does not exist or you didn't do any lesson, please do at least 1 lesson")
             exit(-1)
 
@@ -203,7 +204,7 @@ def run():
         )
         
         if skillId is None:
-            print(f"{colors.FAIL}{colors.WARNING}--------- Traceback log ---------{colors.ENDC}\nNo skillId found in xpGains\nPlease do at least 1 or some lessons in your skill tree\nVisit https://github.com/gorouflex/DuoXPy#how-to-fix-error-500---no-skillid-found-in-xpgains for more information{colors.ENDC}")
+            print(f"{y}--------- Traceback log ---------{Fore.RESET}\nNo skillId found in xpGains\nPlease do at least 1 or some lessons in your skill tree\n{Fore.RESET}")
             logging.error("No skillId found in xpGains")
             exit(-1)
         print(f"{y}[{w}#{y}]{w}Skill ID: {skillId} {Fore.RESET}")

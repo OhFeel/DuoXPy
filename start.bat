@@ -1,4 +1,4 @@
 @echo off
 cd DuolingoXP
-python DuolingoXP.py
+python3 DuolingoXP.py
 pause

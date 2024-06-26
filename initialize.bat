@@ -1,5 +1,5 @@
 @echo off
 echo Installing required packages...
-python -m pip install -r requirements.txt
+python3 -m pip install -r requirements.txt
 echo Installation complete.
 pause
