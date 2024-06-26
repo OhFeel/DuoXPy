@@ -1,79 +1,57 @@
+# DuolingoXP - OhFeel
+
 <picture><img align="left" src="https://github.com/gorouflex/Sandy/blob/main/Img/DuoXPy/duo.svg" width="20%"/></picture>
-<h1>DuoXPy - Project Sandy</h1>
 <h3>⚡️ XP farm for Duolingo 🔥</h3>
-<h4>Powered by Python 🐍</h5>
+<h4>Powered by Python 🐍</h4>
 
-#
+Welcome to DuolingoXP , your go-to Python script for farming XP on Duolingo and keeping your streaks alive with minimal effort. This project is designed to help you move up the league rank without manual intervention.
 
-<p align="center">
-  <a href="#feature">Feature</a>
-  •
-  <a href="#usage">Usage</a>     
-  •
-  <a href="#config">Config</a>     
-  •
-  <a href="#preview">Preview</a>
-  •
-  <a href="#disclaimer">Disclaimer</a>
-</p>
-<p align="center">
+## Features
+
+- **XP Farming**: Automatically earn XP to help you climb the Duolingo league ranks.
+- **Streak Keeper**: Keep your Duolingo streaks alive. Ensure you have a skill set up to call the [`DuolingoXP.py`](DuolingoXP/DuolingoXP.py) file every day.
+
+## How to Use
+
+1. Clone this repository to your local machine.
+2. Open a terminal and navigate to the cloned repository's directory.
+3. Run the `initialize.bat` file to install the required packages:
+
+    ```bat
+    .\initialize.bat
+    ```
+
+4. To start the script, run the `start.bat` file:
+
+    ```bat
+    .\start.bat
+    ```
+
+5. The first time you run the script, you will be prompted to configure it by entering your Duolingo credentials and other settings in the [`config.ini`](DuolingoXP/config.ini) file. This file is ignored by git for security reasons, as specified in the [`.gitignore`](.gitignore) file.
+6. Follow the on-screen instructions to start farming XP on Duolingo.
+
+## Preview
 
 
-</p>
 
-#
-  
-> [!IMPORTANT]
-> **Read all** documents in this repo before doing anything!
-> 
-> Don't forget to star ⭐ this repository
-
-![GitHub Downloads (all assets, latest release)](https://img.shields.io/github/downloads/gorouflex/DuoXPy/total)
-
-# Feature 
-
-- XP farm ⚡️
-- Streak keeper 🔥 [You must have some skill set up to call a Python file every day]
-
-# Usage 
-
-**Make sure Python is installed**
-
-  0. Download from Releases    
-  1. Go to [Duolingo](https://www.duolingo.com) and log in to your Duolingo account
-  2. Open the browser's console by pressing `F12` button ( or `Fn+F12` on some laptops )
-  3. Click on the tab `Console` then paste this to the console
-
-```
-document.cookie
-  .split(';')
-  .find(cookie => cookie.includes('jwt_token'))
-  .split('=')[1]
-```
-  4. Copy the token without `'` ( example: 'abcde1234` -> abcde1234 )
-  5. Click and run `DuoXPy.py` or using `python` or `python3` command
-  6. Follow instructions	
-
-# Preview
-
-<p align="left">
-  <img src="https://github.com/gorouflex/Sandy/blob/main/Img/DuoXPy/preview.png">
-  <img src="https://github.com/gorouflex/Sandy/blob/main/Img/DuoXPy/preview1.png">
-</p>
-
-# Disclaimer
+## Disclaimer
 
 > [!WARNING]
 > This project is licensed under the [MIT License](https://mit-license.org/).
 >
 > For more information, see the [LICENSE file](./LICENSE).
-> - This script is **not** affiliated with Duolingo
-> - Use it at your **own risk** and responsibility  
-> - I'm **not responsible** for any consequences that may arise from using this script
-> - This script won't help with your daily or friend quests, it can only earn XP to move up the league rank
-> - This script won't do real lessons or stories, only practices, so it won't affect your learning path
+> - This script is **not** affiliated with Duolingo.
+> - Use it at your **own risk** and responsibility.
+> - I'm **not responsible** for any consequences that may arise from using this script.
+> - This script won't help with your daily or friend quests, it can only earn XP to move up the league rank.
+> - This script won't do real lessons or stories, only practices, so it won't affect your learning path.
 > - You may be **banned** from Duolingo if you overuse it, so use it wisely.
-> - This repo is only for education purposes! 
-### Special thanks to 💖
-- [rfoal](https://github.com/rfoel/) x [duolingo](https://github.com/rfoel/duolingo) for the source code and idea
-- [ESSTX](https://github.com/ESSTX) for xpGains fixes [PR #1](https://github.com/gorouflex/DuoXPy/pull/1), [PR #2](https://github.com/gorouflex/DuoXPy/pull/2) [OLD]
+> - This repo is only for education purposes!
+
+### Special Thanks 💖
+
+- [rfoal](https://github.com/rfoel/) x [duolingo](https://github.com/rfoel/duolingo) for the source code and idea.
+- [ESSTX](https://github.com/ESSTX) for xpGains fixes [PR #1](https://github.com/gorouflex/DuoXPy/pull/1), [PR #2](https://github.com/gorouflex/DuoXPy/pull/2) [OLD].
+- [gorouflex](https://github.com/gorouflex/DuoXPy)
+
+Don't forget to star ⭐ this repository if you find it useful!
