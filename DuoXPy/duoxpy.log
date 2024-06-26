@@ -1,0 +1,26 @@
+2024-06-26 23:12:21,026 - ERROR - HTTP request failed: HTTP Error 500: Internal Server Error
+2024-06-26 23:16:04,461 - ERROR - HTTP request failed: HTTP Error 500: Internal Server Error
+2024-06-26 23:21:28,531 - ERROR - HTTP request failed: HTTP Error 500: Internal Server Error
+2024-06-26 23:21:33,983 - ERROR - HTTP request failed: HTTP Error 500: Internal Server Error
+2024-06-26 23:35:07,997 - ERROR - Error: name 'DUOLINGO_JWT' is not defined
+2024-06-26 23:35:29,046 - ERROR - Error: 'int' object is not subscriptable
+2024-06-26 23:37:46,993 - ERROR - Error: 'int' object is not subscriptable
+Traceback (most recent call last):
+  File "e:\code\DuoXPy\DuoXPy\DuoXPy.py", line 187, in run
+    f"https://www.duolingo.com/{date}/users/{sub['sub']}?fields=fromLanguage,learningLanguage,xpGains",
+                                             ~~~^^^^^^^
+TypeError: 'int' object is not subscriptable
+2024-06-26 23:43:17,892 - ERROR - Error: 'int' object is not subscriptable
+2024-06-26 23:43:17,892 - ERROR - Error: 'int' object is not subscriptable
+Traceback (most recent call last):
+  File "e:\code\DuoXPy\DuoXPy\DuoXPy.py", line 187, in run
+    f"https://www.duolingo.com/{date}/users/{sub['sub']}?fields=fromLanguage,learningLanguage,xpGains",
+                                             ~~~^^^^^^^
+TypeError: 'int' object is not subscriptable
+2024-06-26 23:43:18,728 - ERROR - Error: 'int' object is not subscriptable
+2024-06-26 23:43:18,728 - ERROR - Error: 'int' object is not subscriptable
+Traceback (most recent call last):
+  File "e:\code\DuoXPy\DuoXPy\DuoXPy.py", line 187, in run
+    f"https://www.duolingo.com/{date}/users/{sub['sub']}?fields=fromLanguage,learningLanguage,xpGains",
+                                             ~~~^^^^^^^
+TypeError: 'int' object is not subscriptable
