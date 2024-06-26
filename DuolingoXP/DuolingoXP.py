@@ -23,10 +23,11 @@ current_dir = os.path.dirname(os.path.realpath(__file__))
 CONFIG_FILE = os.path.join(current_dir, 'config.ini')
 VERSION = '3.0.0'
 GITHUB_REPO_GO = 'gorouflex/DuoXPy'
-GITHUB_REPO_OH = 'ohfeel/DuoXPy'
+GITHUB_REPO_OH = 'ohfeel/DuolingoXP'
 GITHUB_OHFEEL = 'ohfeel'
 config = configparser.ConfigParser()
 logging.basicConfig(filename='DuolingoXP/DuolingoXP.log', filemode='a', format='%(asctime)s - %(levelname)s - %(message)s', level=logging.ERROR)
+
 
 def clear():
     os.system('cls' if os.name == 'nt' else 'clear')
@@ -153,7 +154,7 @@ def check_updates():
                 raise SystemExit
 
 def updater():
-    latest_url = f"https://raw.githubusercontent.com/{GITHUB_REPO_OH}/main/DuoXPy/DuoXPy.py"
+    latest_url = f"https://raw.githubusercontent.com/{GITHUB_REPO_OH}/main/DuolingoXP/DuolingoXP.py"
     response = urllib.request.urlopen(latest_url)
     data = response.read().decode('utf-8')
     with open(__file__, 'w', encoding='utf-8') as f:

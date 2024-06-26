@@ -1,0 +1,5 @@
+colorama
+configparser
+ctypes; platform_system == "Windows"
+logging
+requests
